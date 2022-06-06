@@ -2,13 +2,21 @@
     font-family: roboto;
     src: url(roboto.ttf);
 }
+@font-face{
+    font-family: rotwel;
+    src: url(rotwel.ttf);
+}
+@font-face{
+    font-family: coffee;
+    src: url(coffee.ttf);
+}
 
 html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: roboto;
     background: #fff;
+    font-family: roboto;
     margin: 0;
     animation: 1s popup 0.1s ease-in;
 }
@@ -24,6 +32,7 @@ body {
 }
   
 nav {
+    font-family: rotwel;
     height: 10vh;
     width: 100%;
     position: fixed;
@@ -102,6 +111,7 @@ header {
 }
 
 .title {
+    margin-top: 10px;
     overflow: hidden;
     height: 30%;
     width: 60%;
@@ -111,22 +121,16 @@ header {
     font-size: 1.3em;
     cursor: pointer;
     position: relative;
-}
-.title h1 {
-    color: #fff;
-}
-.title h1:hover {
-    margin-top: 10px;
-    transition: 0.2s ease-in-out;
+    
 }
 
 .waviy {
+    font-family: coffee;
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
     font-size: 60px;
   }
   .waviy span {
-    font-family: 'Alfa Slab One', cursive;
     position: relative;
     display: inline-block;
     color: #fff;

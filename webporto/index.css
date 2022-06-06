@@ -131,8 +131,8 @@ header {
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
-    animation: waviy 5s infinite;
-    animation-delay: calc(.1s * var(--i));
+    animation: waviy 2s infinite;
+    animation-delay: calc(.2s * var(--i));
     
   }
   @keyframes waviy {

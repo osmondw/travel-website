@@ -145,17 +145,18 @@ footer{
 .contentf {
     width: 90%;
     height: 70%;
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.column {
+.columnf {
     margin: 10px;
     width: 28%;
     height: 90%;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -165,16 +166,16 @@ footer{
     transition: 0.2s ease-in-out;
 }
 
-.column:hover {
+.columnf:hover {
     width: 30%;
     height: 100%;
     transition: 0.2s ease-in-out;
 }
 
-.column:hover img {
+.columnf:hover img {
     transform: rotate(30deg);
 }
-.column .up {
+.columnf .up {
     width: 100%;
     height: 60%;
     background: #2c3e50;
@@ -183,12 +184,12 @@ footer{
     align-items: center;
 }
 
-.column .up img{
+.columnf .up img{
     width: 50%;
     transition: 2s ease-in-out;
 }
 
-.column .mid {
+.columnf .mid {
     width: 100%;
     height: 10%;
     background: #fff;
@@ -198,7 +199,7 @@ footer{
     color: #333;
 }
 
-.column .down {
+.columnf .down {
     width: 100%;
     height: 30%;
     background: #f0f0f0;
@@ -208,7 +209,7 @@ footer{
     color: #333;
 }
 
-.column .down p{
+.columnf .down p{
     width: 80%;
     height: auto;
     text-align: center;

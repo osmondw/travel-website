@@ -131,7 +131,7 @@ header {
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
-    animation: waviy 1s infinite;
+    animation: waviy 5s infinite;
     animation-delay: calc(.1s * var(--i));
     
   }
@@ -143,7 +143,7 @@ header {
       transform: translateY(-20px)
     }
   }
-  
+
 .content .up {
     height: 40%;
     width: 100%;

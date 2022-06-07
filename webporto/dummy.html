@@ -1,101 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jalan jalan</title>
-        <link rel="stylesheet" href="index.css">
+        <title>Travel Buddy</title>
+        <link rel="stylesheet" href="dummy.css">
+        <link rel="icon" type="image/png" href="assets/iconweb.png">
     </head>
     <body>
-        <div id="home"></div>
-        <nav>
-            <img src="assets/logo.png" class="logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#most">Most Visited</a></li>
-                <li><a href="#destination">Destination</a></li>
-                <li><a href="#food">Food</a></li>
-                <li><a href="#package">Package</a></li>
-            </ul>
-        </nav>
-
-        <header>
-            <div class="bg">
-                <div class="content">
-                    <div class="up">
-                        <form action="index.html">
-                            <input type="search" placeholder="Search...">
-                        </form>
-                    </div>
-
-                    <div class="down">
-                        <div class="title">
-                            <div>
-                                <button type="button"><span></span>JALAN JALAN</button>
-                            </div>
-                        </div>
-                        <div class="paragraph">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Integer tempor scelerisque ligula, vitae volutpat libero posuere non. 
-                                Donec feugiat porttitor fermentum. Maecenas in orci erat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="navigation">
+                <ul>
+                    <li class="list active"><a href="#home">Home</a></li>
+                    <li class="list"><a href="#most">Most Visited</a></li>
+                    <li class="list"><a href="#destination">Destination</a></li>
+                    <li class="list"><a href="#food">Food</a></li>
+                    <li class="list"><a href="#package">Package</a></li>
+                    <div class="indicator"></div>
+                </ul>
             </div>
-            
-        </header>
 
-        <div id="most"></div>
-        <footer>
-            <div class="bgf">
-                <div class="contentf">
-                    <div class="columnf">
-                        <div class="up">
-                            <img src="assets/icon/mountain.png">
-                        </div>
-                        <div class="mid">
-                            <h1>Mountain</h1>
-                        </div>
-                        <div class="down">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Integer tempor scelerisque ligula, vitae volutpat libero posuere non. 
-                                Donec feugiat porttitor fermentum. Maecenas in orci erat.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="columnf">
-                        <div class="up">
-                            <img src="assets/icon/lake.png">
-                        </div>
-                        <div class="mid">
-                            <h1>Lake</h1>
-                        </div>
-                        <div class="down">
-                            <p>In leo sapien, tincidunt et accumsan auctor, vulputate nec diam.
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                Nulla id nisi aliquet, tempus ligula sed, dignissim risus. 
-                                Etiam sed blandit tellus. 
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="columnf">
-                        <div class="up">
-                            <img src="assets/icon/waterfall.png">
-                        </div>
-                        <div class="mid">
-                            <h1>Waterfall</h1>
-                        </div>
-                        <div class="down">
-                            <p>Donec vestibulum risus eu nunc rhoncus, fringilla ullamcorper magna placerat. 
-                                Donec efficitur, tellus ut sollicitudin aliquam, metus eros aliquam elit, 
-                                sed volutpat ligula est sed urna. 
-                                Quisque aliquam lorem quis tellus finibus vestibulum. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+        </script>
     </body>
 </html>

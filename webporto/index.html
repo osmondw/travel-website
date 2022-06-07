@@ -9,13 +9,14 @@
         <div id="home"></div>
         <nav>
             <img src="assets/logoweb.png" class="logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#most">Most Visited</a></li>
-                <li><a href="#destination">Destination</a></li>
-                <li><a href="#food">Food</a></li>
-                <li><a href="#package">Package</a></li>
-            </ul>
+                <ul>
+                    <li class="list"><a href="#home">Home</a></li>
+                    <li class="list"><a href="#most">Most Visited</a></li>
+                    <li class="list"><a href="#destination">Destination</a></li>
+                    <li class="list"><a href="#food">Food</a></li>
+                    <li class="list"><a href="#package">Package</a></li>
+                </ul>
+            </div>
         </nav>
 
         <header>
@@ -109,5 +110,16 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+        </script>
     </body>
 </html>

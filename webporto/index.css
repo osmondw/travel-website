@@ -47,7 +47,10 @@ nav {
     width: 100px;
     cursor: pointer;
 }
-
+nav ul {
+    position: relative;
+    width: 1000px;
+}
 nav ul li {
     list-style: none;
     display: inline-block;
@@ -75,6 +78,12 @@ nav ul li:hover::after{
     width:100%;
 }
 
+nav ul li.active a{
+    color: #009688;
+    position: relative;
+    
+    transition:0.5s; 
+}
 /*CONTENT*/
 header {
     background: #ffff;
@@ -197,8 +206,6 @@ input[type="search"]{
 }
 
 
-
-
 /* footer */
 
 .lower{
@@ -218,18 +225,6 @@ input[type="search"]{
     align-items: center;
 }
 
-.upper {
-    height: 20%;
-    background-color: #009688;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.subtitle {
-    justify-content: center;
-    align-items: center;
-}
 
 .contentf {
     top: 60px;

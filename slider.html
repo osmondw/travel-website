@@ -1,37 +1,87 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
-
-<!DOCTYPE html>
-    <!-- Coding by CodingLab | www.codinglabweb.com -->
-    <html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<title>Responsive Card Slider</title>-->
-
+        <title>Explore Bandung</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/png" href="assets/logo.png">
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="swiper-bundle.min.css">
 
         <!-- CSS -->
         <link rel="stylesheet" href="slider.css">
-                                        
     </head>
     <body>
+        <div id="home"></div>
+        <nav>
+            <img src="assets/logo.png" class="logo">
+                <ul>
+                    <li class="list active"><a href="#home">Home</a></li>
+                    <li class="list"><a href="#destination">Destination</a></li>
+                    <li class="list"><a href="#food">Food</a></li>
+                    <li class="list"><a href="#package">Package</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <div class="bg">
+                <div class="content">
+                    <div class="up">
+                        <form action="index.html">
+                            <input type="search" placeholder="Search...">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </form>
+                    </div>
+
+                    <div class="down">
+                        <div class="title">
+                            <div class="waviy">
+                                <span style="--i:2">E</span>
+                                <span style="--i:1">X</span>
+                                <span style="--i:3">P</span>
+                                <span style="--i:5">L</span>
+                                <span style="--i:6">O</span>
+                                <span style="--i:4">R</span>
+                                <span style="--i:7">E</span>
+                                <span style="--i:8"></span>
+                                <span style="--i:7">B</span>
+                                <span style="--i:4">A</span>
+                                <span style="--i:3">N</span>
+                                <span style="--i:9">D</span>
+                                <span style="--i:7">U</span>
+                                <span style="--i:6">N</span>
+                                <span style="--i:8">G</span>
+                            </div>
+                        </div>
+                        <div class="paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Integer tempor scelerisque ligula, vitae volutpat libero posuere non. 
+                                Donec feugiat porttitor fermentum. Maecenas in orci erat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+
+
+        <div id="destination"></div>
+        <div class="destinasi">
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
-                            </div>
+                                <div class="columnd">
+                                    <div class="card-image">
+                                        <!-- card image sama dengan up-->
+                                        <img src="assets/tangkuban.png" alt="" class="card-img">
+                                    </div>
+                                </div>
                         </div>
-
                         <div class="card-content">
-                            <h2 class="name">1</h2>
+                            <h2 class="name">Tangkuban Perahu</h2>
                             <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
                             <button class="button">View More</button>
@@ -39,15 +89,15 @@
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <span class="overlay"></span>
+                            <div class="overlay"></div>
 
                             <div class="card-image">
-                                <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+                                <img src="assets/orchid.png" alt="" class="card-img">
                             </div>
                         </div>
 
                         <div class="card-content">
-                            <h2 class="name">2</h2>
+                            <h2 class="name">Orchid Forest</h2>
                             <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
                             <button class="button">View More</button>
@@ -55,15 +105,15 @@
                     </div>
                     <div class="card swiper-slide">
                         <div class="image-content">
-                            <span class="overlay"></span>
+                            <div class="overlay"></div>
 
                             <div class="card-image">
-                                <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+                                <img src="assets/maribaya.png" alt="" class="card-img">
                             </div>
                         </div>
 
                         <div class="card-content">
-                            <h2 class="name">3</h2>
+                            <h2 class="name">Curug Maribaya</h2>
                             <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
                             <button class="button">View More</button>
@@ -76,14 +126,45 @@
             <div class="swiper-button-prev swiper-navBtn"></div>
             <div class="swiper-pagination"></div>
         </div>
-        
-    </body>
+    </div>
+        <div id="food"></div>
+        <div class="food">
+            <div class="bgf">
+                <div class="contentf">
+                    <div class="columnf">
 
-    <!-- Swiper JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="package"></div>
+        <div class="package">
+            <div class="bgp">
+                <div class="contentp">
+                    <div class="columnp">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper JS -->
       <!--Uncomment this line-->
     <script src="swiper-bundle.min.js"></script>
 
     <!-- JavaScript -->
       <!--Uncomment this line-->
     <script src="slider.js"></script>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+        </script>
+    </body>
 </html>

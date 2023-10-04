@@ -4,6 +4,11 @@
         <title>Explore Bandung</title>
         <link rel="stylesheet" href="index.css">
         <link rel="icon" type="image/png" href="assets/logo.png">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="slider.css">
     </head>
     <body>
         <div id="home"></div>
@@ -13,7 +18,7 @@
                     <li class="list active"><a href="#home">Home</a></li>
                     <li class="list"><a href="#destination">Destination</a></li>
                     <li class="list"><a href="#food">Food</a></li>
-                    <li class="list"><a href="#package">Package</a></li>
+                    <li class="list"><a href="#about">About</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,59 +67,98 @@
 
 
         <div id="destination"></div>
-        <div class="destination">
-            <div class="bgd">
-                <div class="contentd">
-                    <div class="columnd">
-                        <div class="up">
-                            <img src="assets/tangkuban.png">
-                        </div>
-                        <div class="mid">
-                            <h1>Tangkuban Perahu</h1>
-                        </div>
-                        <div class="down">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Integer tempor scelerisque ligula, vitae volutpat libero posuere non. 
-                                Donec feugiat porttitor fermentum. Maecenas in orci erat.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="columnd">
-                        <div class="up">
-                            <img src="assets/orchid.png">
-                        </div>
-                        <div class="mid">
-                            <h1>Orchid Forest</h1>
-                        </div>
-                        <div class="down">
-                            <p>In leo sapien, tincidunt et accumsan auctor, vulputate nec diam.
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                Nulla id nisi aliquet, tempus ligula sed, dignissim risus. 
-                                Etiam sed blandit tellus. 
-                            </p>
-                        </div>
-                    </div>
+        <div class="destinasi">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="overlay"></div>
 
-                    <div class="columnd">
-                        <div class="up">
-                            <img src="assets/maribaya.png">
+                            <div class="card-image">
+                                <img src="assets/tangkuban.png" alt="" class="card-img">
+                            </div>
                         </div>
-                        <div class="mid">
-                            <h1>Curug Maribaya</h1>
+
+                        <div class="card-content">
+                            <h2 class="name">Tangkuban Perahu</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
                         </div>
-                        <div class="down">
-                            <p>Donec vestibulum risus eu nunc rhoncus, fringilla ullamcorper magna placerat. 
-                                Donec efficitur, tellus ut sollicitudin aliquam, metus eros aliquam elit, 
-                                sed volutpat ligula est sed urna. 
-                                Quisque aliquam lorem quis tellus finibus vestibulum. 
-                            </p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="overlay"></div>
+
+                            <div class="card-image">
+                                <img src="assets/orchid.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Orchid Forest</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="overlay"></div>
+
+                            <div class="card-image">
+                                <img src="assets/rancaupas.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Ranca Upas</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="overlay"></div>
+
+                            <div class="card-image">
+                                <img src="assets/cibadak.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Cibadak Culinary Night</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="overlay"></div>
+
+                            <div class="card-image">
+                                <img src="assets/maribaya.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Curug Maribaya</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
         <div id="food"></div>
         <div class="food">
             <div class="bgf">
@@ -137,7 +181,13 @@
             </div>
         </div>
 
+        <!-- Swiper JS -->
+      <!--Uncomment this line-->
+    <script src="swiper-bundle.min.js"></script>
 
+    <!-- JavaScript -->
+      <!--Uncomment this line-->
+    <script src="slider.js"></script>
         <script>
             const list = document.querySelectorAll('.list');
             function activeLink(){
